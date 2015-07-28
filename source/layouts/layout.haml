@@ -12,16 +12,25 @@
 
     %title
       Kieren Davies
-      = "- #{current_page.data.title}" if current_page.data.title
+      = "- #{current_resource.data.title}" if current_resource.data.title
 
   %body{class: page_classes}
     %nav.navbar.navbar-inverse.navbar-fixed-top
       .container
         .navbar-header
-          .navbar-brand Kieren Davies
-        #navbar.navbar-collapse.collapse
+          %button(type='button' class='navbar-toggle collapsed'){data: {toggle: 'collapse', target: '#navbar-collapse'}, aria: {expanded: 'false'}}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand(href='/') Kieren Davies
+        #navbar-collapse.navbar-collapse.collapse
+          %ul.nav.navbar-nav
+            - sitemap.order_by(:nav_order).all.each do |resource|
+              %li{class: ('active' if resource == current_resource)}
+                %a{href: resource.path}= resource.data.nav_title || resource.data.title
 
     = yield
 
-    %script(src="https://code.jquery.com/jquery-1.11.3.min.js")
-    %script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+    %script(src='https://code.jquery.com/jquery-1.11.3.min.js')
+    %script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
