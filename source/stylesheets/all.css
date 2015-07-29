@@ -19,3 +19,11 @@ body {
   top: 410px;
   color: #ccc;
 }
+
+.btn-group-panel-heading > .btn {
+  padding: 3px 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 3px;
+  margin: -6px;
+}

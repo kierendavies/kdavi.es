@@ -1,0 +1,14 @@
+.panel.panel-default
+  .panel-heading.clearfix
+    %h3.panel-title.pull-left= title
+    .btn-group.btn-group-panel-heading.pull-right
+      - if locals[:github_name]
+        %a.btn.btn-default(href="https://github.com/#{github_name}")
+          %i.fa.fa-github
+  .panel-body
+    .media-body
+      = yield
+    - if locals[:google_play_name]
+      .media-right
+        %a(href="https://play.google.com/store/apps/details?id=#{google_play_name}")
+          %img(src='https://developer.android.com/images/brand/en_generic_rgb_wo_45.png' alt='Get it on Google Play')
