@@ -19,20 +19,19 @@ nav_order: 2
 .row
   .col-md-4
     = partial :code_panel, locals: {title: 'kdavi.es', github_name: 'kierendavies/kdavi.es'} do
-      %p
-        This site. Built with
-        = succeed '.' do
-          %a(href='https://middlemanapp.com/') Middleman
+      This site. Built with
+      = succeed '.' do
+        %a(href='https://middlemanapp.com/') Middleman
   .col-md-4
     = partial :code_panel, locals: {title: 'Home Automation', github_name: 'kierendavies/home-automation'} do
-      %p Home automation exposed through a Rails site.  Mostly just polls my router to track who is home.
+      Home automation exposed through a Rails site.  Mostly just polls my router to track who is home.
   .col-md-4
     = partial :code_panel, locals: {title: 'Lambda Tutor', github_name: 'kierendavies/lambda-tutor'} do
-      %p A lambda calculus parser and evaluator, with a rough frontend stuck on it.
+      A lambda calculus parser and evaluator, with a rough frontend stuck on it.
 .row
   .col-md-6
     = partial :code_panel, locals: {title: 'Tempo Tapper', github_name: 'kierendavies/tempotapper', google_play_name: 'za.co.kierendavies.tempotapper'} do
-      %p An Android application for finding the tempo of any song or rhythm by tapping to the beat.
+      An Android application for finding the tempo of any song or rhythm by tapping to the beat.
   .col-md-6
     = partial :code_panel, locals: {title: 'Please Call Me', github_name: 'kierendavies/pleasecall', google_play_name: 'za.co.kierendavies.pleasecall'} do
-      %p An Android application for sending a "please call me" as easily as making an ordinary phone call.
+      An Android application for sending a "please call me" as easily as making an ordinary phone call.
