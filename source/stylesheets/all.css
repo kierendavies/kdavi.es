@@ -39,10 +39,10 @@ body {
   color: #ccc;
 }
 
-.btn-group-panel-heading .btn {
-  padding: 3px 8px;
-  font-size: 14px;
-  line-height: 1.5;
-  border-radius: 3px;
+.panel-heading .btn-group .btn {
   margin: -6px;
+}
+
+.btn-toolbar-long .btn {
+  margin-bottom: 5px;
 }

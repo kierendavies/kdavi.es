@@ -1,9 +1,9 @@
 .panel.panel-default
   .panel-heading.clearfix
     %h3.panel-title.pull-left= title
-    .btn-group.btn-group-panel-heading.pull-right
+    .btn-group.pull-right
       - if locals[:github_name]
-        %a.btn.btn-default(href="https://github.com/#{github_name}")
+        %a.btn.btn-default.btn-sm.btn-social-icon(href="https://github.com/#{github_name}")
           %i.fa.fa-github
   .panel-body
     .media-body
