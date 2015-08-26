@@ -1,0 +1,12 @@
+- title: Bio
+  url: /bio.html
+- title: Code
+  url: /code.html
+- title: CV
+  url: /cv.html
+- title: Experiments
+  dropdown:
+    - title: Name Translator
+      url: /experiments/name_translator.html
+- title: Contact
+  url: /contact.html

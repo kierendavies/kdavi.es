@@ -26,9 +26,22 @@
           %a.navbar-brand(href='/') Kieren Davies
         #navbar-collapse.navbar-collapse.collapse
           %ul.nav.navbar-nav
-            - sitemap.order_by(:nav_order).all.each do |resource|
-              %li{class: ('active' if resource == current_resource)}
-                %a{href: resource.path}= resource.data.nav_title || resource.data.title
+            -# - sitemap.order_by(:nav_order).all.each do |resource|
+            -#   %li{class: ('active' if resource == current_resource)}
+            -#     %a{href: resource.url}= resource.data.nav_title || resource.data.title
+            - data.navbar.each do |item|
+              - if item.dropdown
+                %li.dropdown
+                  %a.dropdown-toggle(href='#' role='button'){data: {toggle: 'dropdown'}, aria: {haspopup: 'true', expanded: 'false'}}
+                    = item.title
+                    %span.caret
+                  %ul.dropdown-menu
+                    - item.dropdown.each do |dropdown_item|
+                      %li{class: ('active' if dropdown_item.url == current_resource.url)}
+                        %a{href: dropdown_item.url}= dropdown_item.title
+              - else
+                %li{class: ('active' if item.url == current_resource.url)}
+                  %a{href: item.url}= item.title
 
     = yield
 

@@ -2,8 +2,6 @@
 layout: container
 title: Biography
 subtitle: abridged edition
-nav_title: Bio
-nav_order: 1
 ---
 
 I am a native of [Cape Town, South Africa](https://en.wikipedia.org/wiki/Cape_Town).  In 2014 I completed my Bachelor of Science in Mathematics and Computer science at the [University of Cape Town](http://uct.ac.za/).  In 2016 I will resume studies for a BSc Honours degree.
