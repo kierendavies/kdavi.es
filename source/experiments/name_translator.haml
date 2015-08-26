@@ -1,0 +1,25 @@
+---
+layout: container
+title: Name Translator
+javascripts:
+  - https://mnater.github.io/Hyphenator/Hyphenator.js
+  - https://mnater.github.io/Hyphenator/patterns/en-us.js
+  - /javascripts/name_translator.js
+stylesheets:
+  - /stylesheets/name_translator.css
+---
+
+%form#translate-name.form-inline
+  .form-group
+    %label(for='name') Your name
+    %input#name.form-control(type='text')
+  %button.btn.btn-default Translate!
+
+#result.hidden
+  %hr
+  .well.well-lg
+    %h2 Your name means
+    %table.table.table-bordered
+      %tr#name-syllables
+      %tr#name-translation
+
