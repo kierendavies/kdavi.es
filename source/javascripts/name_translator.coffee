@@ -24,7 +24,7 @@ Number.prototype.mod = (n) ->
 
 @translation = (name) ->
   Hyphenator.hyphenate(name, "en").split(" ").map (s) ->
-    [s, words[s.hashCode().mod(words.length)]]
+    [s, words[s.toLowerCase().hashCode().mod(words.length)]]
 
 @showTranslation = ->
   $("#result").removeClass("hidden")
