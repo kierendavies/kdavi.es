@@ -5,8 +5,6 @@
 - title: CV
   url: /cv.html
 - title: Experiments
-  dropdown:
-    - title: Name Translator
-      url: /experiments/name_translator.html
+  dropdown: []
 - title: Contact
   url: /contact.html
