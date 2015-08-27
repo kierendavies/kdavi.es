@@ -36,7 +36,6 @@ Number.prototype.mod = (n) ->
 
 
 $ ->
-  $("form#translate-name").submit (event) =>
+  $("form#translate-name").submit (event) ->
     event.preventDefault()
     showTranslation()
-
