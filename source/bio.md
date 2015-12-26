@@ -10,6 +10,6 @@ I started programming when I was 15, after I heard about the [South African Comp
 
 I have done internships at several start-ups and small businesses in Cape Town, including [Praekelt Foundation](http://praekeltfoundation.org/), [Krit](http://krit.com/), and [SKA Africa](http://www.ska.ac.za/), as well as international companies [Facebook](https://www.facebook.com/careers/locations/menlo-park), [Oracle (Nimbula)](http://www.oracle.com/us/corporate/acquisitions/nimbula/index.html), and (currently) [Amazon Web Services](http://adccpt.co.za/).
 
-I spend a lot of my free time playing League of Legends as [kierend](www.lolking.net/summoner/euw/61403871) on EUW.  I mainly play support and jungle.
+I spend a lot of my free time playing League of Legends as [kierend](http://www.lolking.net/summoner/euw/61403871) on EUW.  I mainly play support and jungle.
 
 The rest of the time I can be found rock climbing, playing paintball, or making sounds with my guitar and other instruments.
