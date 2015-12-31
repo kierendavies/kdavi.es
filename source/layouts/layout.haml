@@ -5,7 +5,7 @@
     %meta(http-equiv='X-UA-Compatible' content='IE=edge')
     %meta(name='viewport' content='width=device-width, initial-scale=1')
     - (data.stylesheets | (current_resource.data.stylesheets || [])).each do |stylesheet|
-      %link(rel='stylesheet' type='text/css' href=stylesheet)
+      = stylesheet_link_tag stylesheet
     %meta(name='generator' content="Middleman v#{Middleman::VERSION}")
 
     %title
@@ -21,7 +21,7 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand(href='/') Kieren Davies
+          = link_to 'Kieren Davies', '/', class: 'navbar-brand'
         #navbar-collapse.navbar-collapse.collapse
           %ul.nav.navbar-nav
             -# - sitemap.order_by(:nav_order).all.each do |resource|
@@ -36,10 +36,10 @@
                   %ul.dropdown-menu
                     - item.dropdown.each do |dropdown_item|
                       %li{class: ('active' if dropdown_item.url == current_resource.url)}
-                        %a{href: dropdown_item.url}= dropdown_item.title
+                        = link_to dropdown_item.title, dropdown_item.url
               - else
                 %li{class: ('active' if item.url == current_resource.url)}
-                  %a{href: item.url}= item.title
+                  = link_to item.title, item.url
 
     = yield
 
@@ -50,4 +50,4 @@
           %a(href='http://kdavi.es/') Kieren Davies
 
     - (data.javascripts | (current_resource.data.javascripts || [])).each do |javascript|
-      %script(type='text/javascript' src=javascript)
+      = javascript_include_tag javascript
